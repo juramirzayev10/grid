@@ -2,28 +2,142 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background-color: rgb(24, 24, 24);
 }
 
 .wr {
   border: 5px solid crimson;
-  padding: 10px;
+  padding: 30px;
   display: grid;
-  gap: 10px;
-  grid-template-columns: 1fr 2fr 3fr 2fr;
+  gap: 20px;
+  grid-template-columns: 1fr 2fr 2fr 2fr;
   grid-template-rows: auto;
+}
+
+.acc {
+  display: flex;
+  gap: 40px;
+  color: white;
+  height: 120px;
+  align-items: center;
+  width: 650px;
+  margin-left: 20px;
+}
+
+.p {
+  color: rgb(177, 176, 176);
+  font-size: larger;
+}
+
+.btn-acc {
+  padding: 20px 35px;
+  font-size: xx-large;
+  border-radius: 50px;
+  transition: 0.3s;
+}
+
+.btn-acc:hover {
+  background-color: darkblue;
+  color: white;
+  border: none;
+}
+
+.btn-acc:active {
+  background-color: crimson;
+  color: white;
+  border: none;
+}
+
+.img {
+  height: 100%;
+}
+
+.acc-img {
+  height: 100%;
+}
+
+.h1 {
+  font-size: 50px;
+  color: white;
+  margin-left: 10px;
+  margin-top: 20px;
 }
 
 .child {
   background-color: darkblue;
   height: 300px;
   grid-column: 4;
+  border-radius: 50px;
 }
 
 .item {
   background-color: red;
-  height: 100vh;
+  height: 80vh;
   grid-column: 1 / 4;
   grid-row: 1 / 10;
+  border-radius: 50px;
+}
+
+.icons {
+  cursor: pointer;
+  display: flex;
+  gap: 30px;
+}
+
+.like {
+  padding: 10px 20px;
+  width: 320px;
+  height: 60px;
+  display: flex;
+  font-size: 40px;
+  border-radius: 50px;
+  color: white;
+  justify-content: space-between;
+  background-color: rgba(88, 88, 88, 0.822);
+  margin-left: 20px;
+  align-items: center;
+}
+
+.uzat,
+.cut,
+.save,
+.dots {
+  padding: 10px 20px;
+  width: 320px;
+  height: 60px;
+  display: flex;
+  font-size: 40px;
+  border-radius: 50px;
+  color: white;
+  gap: 10px;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(88, 88, 88, 0.822);
+  margin-left: 20px;
+}
+
+.dots {
+  width: 60px;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.cut {
+  width: 350px;
+}
+
+.save {
+  width: 300px;
+}
+
+.hr {
+  width: 1px;
+  height: 35px;
+  background-color: white;
 }
 
 .item1 {
@@ -34,4 +148,10 @@
 
 .item1-vd {
   width: 70%;
+}
+
+.katta-vd {
+  border-radius: 50px;
+  width: 100%;
+  height: 100%;
 }
